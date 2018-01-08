@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.scorekeeper.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/fussballfeld" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,34 +25,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="Team 1"
                 android:textColor="#0D47A1"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="Team 2"
                 android:textColor="#D50000"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:padding="12dp"
+            android:paddingTop="18dp"
             android:text="Score"
-            android:textColor="#33691E"
-            android:textSize="16sp" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
 
         <LinearLayout
@@ -59,26 +68,28 @@
                 android:id="@+id/goals_team1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="0"
                 android:textColor="#0D47A1"
-                android:textSize="20sp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
 
             <TextView
                 android:id="@+id/goals_team2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="0"
                 android:textColor="#D50000"
-                android:textSize="20sp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -89,6 +100,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:onClick="addGoal1"
                 android:text="Goal" />
@@ -96,6 +109,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
                 android:layout_weight="1"
                 android:onClick="addGoal2"
                 android:text="Goal" />
@@ -105,10 +120,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:padding="12dp"
+            android:paddingTop="24dp"
             android:text="Corners"
-            android:textColor="#33691E"
-            android:textSize="16sp" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,7 +135,7 @@
                 android:id="@+id/corners_team1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
@@ -133,7 +148,7 @@
                 android:id="@+id/corners_team2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
@@ -150,6 +165,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
                 android:onClick="addCorner1"
                 android:text="Corner" />
@@ -157,6 +174,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="12dp"
                 android:layout_weight="1"
                 android:onClick="addCorner2"
                 android:text="Corner" />
