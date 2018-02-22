@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="buttonMarginOut">12dp</dimen>
+    <dimen name="buttonMarginIn">20dp</dimen>
+    <dimen name="paddingTopScore">18dp</dimen>
+    <dimen name="paddingTopMetric1">22dp</dimen>
+    <dimen name="NumberDisplayMargin">8dp</dimen>
+    <dimen name="resetMargin">24dp</dimen>
+
+
+</resources>

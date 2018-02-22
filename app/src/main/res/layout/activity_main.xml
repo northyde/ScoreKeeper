@@ -25,24 +25,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
+                android:layout_margin="@dimen/buttonMarginOut"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="Team 1"
-                android:textColor="#0D47A1"
+                android:text="@string/team1"
+                android:textColor="@color/team1"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
+                android:layout_margin="@dimen/buttonMarginOut"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="Team 2"
-                android:textColor="#D50000"
+                android:text="@string/team2"
+                android:textColor="@color/team2"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -51,8 +51,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="18dp"
-            android:text="Score"
+            android:paddingTop="@dimen/paddingTopScore"
+            android:text="@string/score"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -68,12 +68,12 @@
                 android:id="@+id/goals_team1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/NumberDisplayMargin"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="0"
-                android:textColor="#0D47A1"
+                android:text="@string/startingNumber"
+                android:textColor="@color/team1"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -82,12 +82,12 @@
                 android:id="@+id/goals_team2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/NumberDisplayMargin"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="0"
-                android:textColor="#D50000"
+                android:text="@string/startingNumber"
+                android:textColor="@color/team2"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -98,30 +98,31 @@
             android:orientation="horizontal">
 
             <Button
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="@dimen/buttonMarginOut"
+                android:layout_marginRight="@dimen/buttonMarginIn"
                 android:layout_weight="1"
                 android:onClick="addGoal1"
-                android:text="Goal" />
+                android:text="@string/buttonScore" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="12dp"
+                android:layout_marginLeft="@dimen/buttonMarginIn"
+                android:layout_marginRight="@dimen/buttonMarginOut"
                 android:layout_weight="1"
                 android:onClick="addGoal2"
-                android:text="Goal" />
+                android:text="@string/buttonScore" />
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:paddingTop="24dp"
-            android:text="Corners"
+            android:paddingTop="@dimen/paddingTopMetric1"
+            android:text="@string/metric1"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp" />
 
@@ -135,12 +136,12 @@
                 android:id="@+id/corners_team1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/NumberDisplayMargin"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="0"
-                android:textColor="#0D47A1"
+                android:text="@string/startingNumber"
+                android:textColor="@color/team1"
                 android:textSize="20sp" />
 
 
@@ -148,12 +149,12 @@
                 android:id="@+id/corners_team2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/NumberDisplayMargin"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:text="0"
-                android:textColor="#D50000"
+                android:text="@string/startingNumber"
+                android:textColor="@color/team2"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -165,20 +166,20 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginLeft="@dimen/buttonMarginOut"
+                android:layout_marginRight="@dimen/buttonMarginIn"
                 android:layout_weight="1"
                 android:onClick="addCorner1"
-                android:text="Corner" />
+                android:text="@string/buttonMetric1" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="12dp"
+                android:layout_marginLeft="@dimen/buttonMarginIn"
+                android:layout_marginRight="@dimen/buttonMarginOut"
                 android:layout_weight="1"
                 android:onClick="addCorner2"
-                android:text="Corner" />
+                android:text="@string/buttonMetric1" />
         </LinearLayout>
 
     </LinearLayout>
@@ -188,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="24dp"
+        android:layout_margin="@dimen/resetMargin"
         android:onClick="reset"
-        android:text="Reset All" />
+        android:text="@string/resetButton" />
 </RelativeLayout>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="team1">Team 1</string>
+    <string name="team2">Team 2</string>
+    <string name="score">Score</string>
+    <string name="buttonScore">Goal</string>
+    <string name="metric1">Corners</string>
+    <string name="buttonMetric1">Corner</string>
+    <string name="resetButton">Reset all</string>
+    <string name="startingNumber">0</string>
 </resources>
